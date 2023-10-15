@@ -1049,16 +1049,44 @@ footer {
 .main__service__container2__service1--content:hover {
     background-color: #a0b6ff9e;
 }
-.main__contact{
+
+.main__contact {
     width: 100%;
     display: flex;
 }
-.main__contact--i--b{
+
+.main__contact--i--b {
+    width: 50%;
+    padding-left: 100px;
+    height: 478px;
+    padding-top: 79px;
+
+}
+
+.main__contact__title {
     width: 50%;
 }
-.main__contact__title{
-    width: 50%;
+
+.main__contact__title {
+
+    width: 453px;
+    height: 269px;
+    flex-shrink: 0;
+    color: #094B72;
+
+    font-family: Playfair Display;
+    font-size: 76px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    /* 91.2px */
+    letter-spacing: 1.52px;
 }
+.main__contact__title pre{
+    margin-left: -373px;
+
+}
+    
 
 .main__contact__input {
     width: 100%;
@@ -1072,31 +1100,56 @@ footer {
     gap: 10px !important;
 
 }
-.main__contact__input__name{
+
+.main__contact__input__name {
+    margin-bottom: 30px;
     border: none;
     background-color: #D9D9D9;
     /* background-color: darkgoldenrod; */
     width: 456px;
     height: 54px;
 }
-.main__contact__input__numero{
+
+.main__contact__input__numero {
+    margin-bottom: 30px;
     border: none;
     background-color: #D9D9D9;
     /* background-color: darkgoldenrod; */
     width: 456px;
     height: 54px;
 }
-.main__contact__input__email{
+
+.main__contact__input__email {
+    margin-bottom: 30px;
     border: none;
     background-color: #D9D9D9;
     /* background-color: darkgoldenrod; */
     width: 456px;
     height: 54px;
 }
-.main__contact__input__message{
+
+.main__contact__input__message {
+    margin-bottom: 30px;
     border: none;
     background-color: #D9D9D9;
     /* background-color: darkgoldenrod; */
     width: 456px;
     height: 54px;
+}
+
+.main__contact__button button{
+    color: #ffffff;
+    width: 150px;
+    height: 60px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: #094B72;
+    margin-top: 153px;
+    margin-left: 71px;
+}.map a img{
+    box-shadow: 5px 5px 5px #020277a8;
+    margin-bottom: 26px;
+    margin-left: 133px;
+    height: 305px;
+    width: 80%;
 }
