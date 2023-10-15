@@ -149,6 +149,10 @@ button.row__contact-us {
     font-weight: 400;
     line-height: 140.5%;
     letter-spacing: 0.88px;
+    color: #000000;
+    background-color: #ffffff;
+    font-size: 16.5pt;
+    font-weight: normal;
 
 }
 
@@ -483,7 +487,7 @@ hr {
 
 }
 
-.main__container__question button  {
+.main__container__question button {
     gap: 16px;
     padding-top: 6px;
     color: var(--neutral-grey-1, #F9F8F9);
@@ -829,9 +833,10 @@ footer {
     line-height: 120%;
     letter-spacing: 1.8px;
     margin-left: 160px;
-    
+
 }
-.main__about__container--content1 h3  {
+
+.main__about__container--content1 h3 {
     color: #094B72;
     width: 277px;
     height: 134.078px;
@@ -843,7 +848,7 @@ footer {
     letter-spacing: 1.8px;
     margin-left: 221px;
     margin-top: -212px;
-    
+
 }
 
 .main__about__container--content1 p {
@@ -1098,12 +1103,13 @@ footer {
     /* 91.2px */
     letter-spacing: 1.52px;
 }
-.main__contact__title pre{
+
+.main__contact__title pre {
     margin-left: -373px;
     margin-top: 120px;
 
 }
-    
+
 
 .main__contact__input {
     width: 100%;
@@ -1154,7 +1160,7 @@ footer {
     height: 54px;
 }
 
-.main__contact__button button{
+.main__contact__button button {
     color: #ffffff;
     width: 150px;
     height: 60px;
@@ -1163,13 +1169,16 @@ footer {
     background: #094B72;
     margin-top: 153px;
     margin-left: 71px;
-}.map a img{
+}
+
+.map a img {
     box-shadow: 5px 5px 5px #020277a8;
     margin-bottom: 26px;
     margin-left: 133px;
     height: 305px;
     width: 80%;
 }
-.main__contact h2{
+
+.main__contact h2 {
     color: white;
 }
