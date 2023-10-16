@@ -689,6 +689,11 @@ footer {
     font-style: normal;
     font-weight: 500;
     line-height: 30px;
+
+
+}
+
+.footer__lists__3>h4 {
     color: #000000;
     /* Choisissez une couleur de texte plus foncée */
     background-color: #ffffff;
@@ -696,6 +701,9 @@ footer {
     font-size: 15.0pt;
     /* Ajustez la taille de la police si nécessaire */
     font-weight: normal;
+    background-color: #094B72;
+    color: white;
+    
 
 }
 
