@@ -25,9 +25,21 @@
       <li class="nav-item">
         <a class="nav-link" href="about.html">about</a>
       </li>
-      <li class="nav-item">
+      
+      <div class="drop">
+        <div class="serviceanddrop"> 
+        <li class="nav-item">
         <a class="nav-link" href="sercice.html">service</a>
       </li>
+      <button class="imgdrop"><img src="images/dropdown.png" alt=""></button>
+      </div>
+      <ul class="listservice">
+        <li><a href="serviceS.html#ourservice ">introduction</a></li>
+        <li><a href="serviceS.html#ourservice">our service</a></li>
+      </ul>
+    </div>
+ 
+      
        
     </ul>
     <div class="twoicon">
@@ -38,6 +50,7 @@
       <img src="images/logoserch.svg" alt="logo">
     </button>
   </div>
+ 
   
 
 
@@ -76,23 +89,28 @@
             <div class="main__contact__input">
     
               <div>
-                <input class="main__contact__input--" type="text" placeholder="Name">
+                
+                <input id="name" class="main__contact__input--" type="text" placeholder="name" >
+                <div class="error" id="nameError"></div>
+              </div>
+              
+              <div>
+                <input id="phone_number" class="main__contact__input--" type="text" placeholder="phone number" >
+                <div class="error" id="phoneError"></div>
+
               </div>
               <div>
-                <input class="main__contact__input--" type="text" placeholder="Phone Number">
+                <input id="email" class="main__contact__input--" type="email" placeholder="Email">
+                <div class="error" id="emailError"></div>
               </div>
               <div>
-                <input class="main__contact__input--" type="email" placeholder="Email">
-              </div>
-              <div>
-                <input class="main__contact__input--" type="text"  placeholder="Message">
+                <input id="message" class="main__contact__input--" type="text"  placeholder="Message">
+                <div class="error" id="messageError"></div>
               </div>
     
             </div>
             <div class="main__contact__button">
-              <button>
-                send
-              </button>
+              <button type="submit" onclick="validateForm()">SEND</button>
             </div>
           </div>
         

@@ -1,3 +1,7 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+
+
 @media screen and (min-width:768px) and (max-width:1279px) {
     .burger {
         display: none;
@@ -421,6 +425,61 @@ nav li:hover {
 
 .listservice--active{
     display: block;
+}
+
+#nameError {
+    color: red;
+    font-size: 0.7rem;
+    font-family: Poppins;
+    text-align: left;
+    margin-left: 7.9rem;
+}
+#phoneError{
+    color: red;
+    font-size: 0.7rem;
+    font-family: Poppins;
+    text-align: left;
+    margin-left: 7.9rem;
+
+}
+#emailError{
+    color: red;
+    font-size: 0.7rem;
+    font-family: Poppins;
+    text-align: left;
+    margin-left: 7.9rem;
+
+}
+#messageError{
+    color: red;
+    font-size: 0.7rem;
+    font-family: Poppins;
+    text-align: left;
+    margin-left: 7.9rem;
+
+}
+#name{
+    padding: 1rem;
+    border-radius: 1rem;
+}
+#message{
+    padding: 1rem;
+    border-radius: 1rem;
+
+}
+#email{
+    padding: 1rem;
+    border-radius: 1rem;
+}
+#phone_number{
+    padding: 1rem;
+    border-radius: 1rem;
+
+}
+.main__contact__input{
+    display: flex;
+    flex-direction:column;
+    gap: 20px;
 }
 
 
@@ -1299,9 +1358,9 @@ footer {
 }
 
 .main__contact__input-- {
-    margin-bottom: 30px;
+ 
     border: none;
-    background-color: #D9D9D9;
+    background-color: #e7e7e7;
     /* background-color: darkgoldenrod; */
     width: 80%;
     height: 50px;
@@ -1320,4 +1379,14 @@ footer {
 .main__contact--i--b {
 
     text-align: center;
+}
+.input-error{
+    border: solid 2px red;
+ 
+   
+}
+.input-valid{
+    border: solid 2px green;
+    
+   
 }
