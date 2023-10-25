@@ -405,8 +405,23 @@ nav li:hover {
     right: -0px;
 
 }
+.serviceanddrop{
+    display: flex;
+}
 
+.drop{
+    display: block;
+}
+.listservice{
+    display:none;
+    transform: translate(0rem);
+    transition: 1.6s;
+    right: -0px;
+}
 
+.listservice--active{
+    display: block;
+}
 
 
 
