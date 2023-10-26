@@ -7,6 +7,12 @@ burgerbtn.addEventListener("click", () => {
     navbar.classList.toggle("navbar-nav2--active")
 
 })
+const serchbtn = document.querySelector(".button-ser");
+const input = document.querySelector(".clique-ser")
+serchbtn.addEventListener("click", () => {
+    input.classList.toggle("clique-ser--active")
+
+})
 
 
 

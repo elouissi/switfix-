@@ -3,6 +3,18 @@
 
 
 @media screen and (min-width:768px) and (max-width:1279px) {
+    .clique-ser{
+        display: none;
+        }
+        .clique-ser--active{
+                margin-left: -113px;
+    display: block;
+        }
+        .button-ser{
+            background-color: white;
+        border: none;
+        margin-left: -83px;
+        }
     .burger {
         display: none;
     }
@@ -77,8 +89,39 @@
 }
 /* version descktop */
 @media screen and (min-width:1279px) {
-    .main{
-        display: flex;
+    .main__section_2__text h2{
+        padding-top: 10px;
+    text-align: center;
+    color: var(--neutral-grey-7, #2D2F30);
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.323px;
+    }
+    .clique-ser{
+    display: none;
+    }
+    .clique-ser--active{
+        display: block;
+    }
+    .button-ser{
+        background-color: white;
+    border: none;
+    margin-left: -83px;
+    }
+    .main__contact{
+        width: 50% ;
+    }
+ 
+    .main{display: flex;}
+ 
+        
+ 
+    .map img {
+     margin: 20px;
+     height: 44vh !important;
+     width: 41vw !important;
     }
     .drop{
         display: flex;
@@ -202,7 +245,7 @@
         justify-content: space-around;
         padding: 10px;
         /* gap: 450px; */
-        margin-bottom: 20px;
+        margin-bottom: 2px;
     }
 
     .footer__lists {
@@ -245,7 +288,6 @@
         cursor: pointer;
         display: none;
     }
-
 }
 
 * {
@@ -272,6 +314,7 @@ nav {
     display: block;
 
 }
+listservice listservice--active 
 
 #icons:before {
     content: "\2630";
@@ -346,6 +389,7 @@ nav li:hover {
     top:27px
 
 }
+
 
 .nav-link {
     color: black;
@@ -431,7 +475,7 @@ nav li:hover {
     transition: 1.6s;
     right: -0px;
     padding: 4px;
-    background-color: cornflowerblue;
+    background-color: rgb(255, 255, 255);
 }
 
 
@@ -488,6 +532,7 @@ nav li:hover {
     border-radius: 1rem;
 
 }
+
 .main__contact__input{
     display: flex;
     flex-direction:column;
@@ -838,7 +883,7 @@ hr {
 
 .body{
     width: 100%;
-    min-height: 100vh;
+    min-height: 69vh;
     background-color: #FCFCFC;
     display: flex;
     justify-content: center;
