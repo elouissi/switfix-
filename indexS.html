@@ -16,19 +16,19 @@
     </a> 
     <ul class="navbar-nav ">
       <li class="nav-item  ">
-        <a class="nav-link" href="contact.html">contact </a>
+        <a class="nav-link" href="contactS.html">contact </a>
       </li>
       <li class="nav-item ">
-        <a class="nav-link" href="testimonalises.html"> testimonalias</a>
+        <a class="nav-link" href="serviceS.html#ourservice"> testimonalias</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="about.html">about</a>
+        <a class="nav-link" href="aboutS.html">about</a>
       </li>
       
       <div class="drop">
         <div class="serviceanddrop"> 
         <li class="nav-item">
-        <a class="nav-link" href="sercice.html">service</a>
+        <a class="nav-link" href="serviceS.html">service</a>
       </li>
       <button class="imgdrop"><img src="images/dropdown.png" alt=""></button>
       </div>
@@ -45,9 +45,7 @@
     <a href="#" class="burgerbtn">
       <img class="burger" src="images/burger-img.svg" alt="image burger-img">
     </a>
-    <button class="button-serch">
-      <img src="images/logoserch.svg" alt="logo">
-    </button>
+   
   </div>
  
   
@@ -67,10 +65,20 @@
       <li class="nav-item">
         <a class="nav-link" href="serviceS.html">service</a>
       </li>
+
+      <li>
+        <input type="text" placeholder="rechercher" class="buttonclick">  
+      </li>
+      <li> 
+        
+      <button class="button-serch">
+        <img src="images/logoserch.svg" alt="logo">
+      </button>
+    </li>
+    
       
     </ul>
-    <input type="text" placeholder="rechercher" class="buttonclick">
-  
+   
   
  
 </header>
@@ -83,7 +91,7 @@
               <h1>Repair and Maintenance Service</h1>
               <p>We are here to help you take care of your repair and maintenance needs with the best service tailored just
                 for you.</p>
-              <button class="row__contact-us">
+              <button  class="row__contact-us">
                 contact us
               </button>
               <div class="main__container__content2">
@@ -111,6 +119,8 @@
     
             </div>
           </div>
+        </div> 
+      </main>
 
 
           <section class="main__section_2">
@@ -187,7 +197,7 @@
 
 
 
-          <section class="main__section_4">
+          <!-- <section class="main__section_4">
 
             <p class="main__section_4__title">
               Clients Testimonial
@@ -196,7 +206,9 @@
               <div class="main__section_4__comment1">
                 <div class="main__section_4__comment--text">
                   <h3>Incredible Experience</h3>
-                  <p>We had an incredible experience working with Landify and were impressed they made such a big difference
+                  <p>We had an incredible experience working with Landify and were 
+                    
+                    impressed they made such a big difference
                     in
                     only three weeks. Our team is so grateful for the wonderful improvements they made and their ability to
                     get
@@ -238,7 +250,131 @@
               </div>
             </div>
       
-         </section>
+         </section> -->
+         <main class="body"> 
+          <div class="container">
+	
+            <div class="contents-wraper">
+              
+              <section class="header"><h1>Testimonial</h1></section>
+          
+              <section class="testRow">
+                
+                <div class="testItem active">
+                  <img src="images/femme1.png">
+                  <h3>Jane Doe</h3>
+                  <h4>San Francisco, USA</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+          
+                <div class="testItem">
+                  <img src="images/femme2.png">
+                  <h3>Jane Doe</h3>
+                  <h4>San Francisco, USA</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+          
+                <div class="testItem">
+                  <img src="images/femme1.png">
+                  <h3>Jane Doe</h3>
+                  <h4>San Francisco, USA</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+          
+                <div class="testItem">
+                  <img src="images/femme2.png">
+                  <h3>Jane Doe</h3>
+                  <h4>San Francisco, USA</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+          
+                <div class="testItem">
+                  <img src="images/femme1.png">
+                  <h3>Jane Doe</h3>
+                  <h4>San Francisco, USA</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+          
+              </section>
+          
+              <section class="indicators">
+                <div class="dot active" attr='0' onclick="switchTest(this)"></div>
+                <div class="dot" attr='1' onclick="switchTest(this)"></div>
+                <div class="dot" attr='2' onclick="switchTest(this)"></div>
+                <div class="dot" attr='3' onclick="switchTest(this)"></div>
+                <div class="dot" attr='4' onclick="switchTest(this)"></div>
+              </section>
+          
+            </div>
+          </div>
+        </main>
+        <script type="text/javascript">
+	
+          // Access the testimonials
+          let testSlide = document.querySelectorAll('.testItem');
+          // Access the indicators
+          let dots = document.querySelectorAll('.dot');
+        
+          var counter = 0;
+        
+          // Add click event to the indicators
+          function switchTest(currentTest){
+            currentTest.classList.add('active');
+            var testId = currentTest.getAttribute('attr');
+            if(testId > counter){
+              testSlide[counter].style.animation = 'next1 0.5s ease-in forwards';
+              counter = testId;
+              testSlide[counter].style.animation = 'next2 0.5s ease-in forwards';
+            }
+            else if(testId == counter){return;}
+            else{
+              testSlide[counter].style.animation = 'prev1 0.5s ease-in forwards';
+              counter = testId;
+              testSlide[counter].style.animation = 'prev2 0.5s ease-in forwards';
+            }
+            indicators();
+          }
+        
+          // Add and remove active class from the indicators
+          function indicators(){
+            for(i = 0; i < dots.length; i++){
+              dots[i].className = dots[i].className.replace(' active', '');
+            }
+            dots[counter].className += ' active';
+          }
+        
+          // Code for auto sliding
+          function slideNext(){
+            testSlide[counter].style.animation = 'next1 0.5s ease-in forwards';
+            if(counter >= testSlide.length - 1){
+              counter = 0;
+            }
+            else{
+              counter++;
+            }
+            testSlide[counter].style.animation = 'next2 0.5s ease-in forwards';
+            indicators();
+          }
+          function autoSliding(){
+            deleteInterval = setInterval(timer, 2000);
+            function timer(){
+              slideNext();
+              indicators();
+            }
+          }
+          autoSliding();
+        
+          // Stop auto sliding when mouse is over the indicators
+          const container = document.querySelector('.indicators');
+          container.addEventListener('mouseover', pause);
+          function pause(){
+            clearInterval(deleteInterval);
+          }
+        
+          // Resume sliding when mouse is out of the indicators
+          container.addEventListener('mouseout', autoSliding);
+        
+        </script>
 
 
 

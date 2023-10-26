@@ -17,27 +17,27 @@
     </a> 
     <ul class="navbar-nav ">
       <li class="nav-item  ">
-        <a class="nav-link" href="contact.html">contact </a>
+        <a class="nav-link" href="contactS.html">contact </a>
       </li>
       <li class="nav-item ">
-        <a class="nav-link" href="testimonalises.html"> testimonalias</a>
+        <a class="nav-link" href="serviceS.html#ourservice"> testimonalias</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="about.html">about</a>
+        <a class="nav-link" href="aboutS.html">about</a>
       </li>
       
       <div class="drop">
         <div class="serviceanddrop"> 
-          <li class="nav-item">
-          <a class="nav-link" href="sercice.html">service</a>
-        </li>
-        <button class="imgdrop"><img src="images/dropdown.png" alt=""></button>
-        </div>
-        <ul class="listservice">
-          <li><a href="serviceS.html#ourservice ">introduction</a></li>
-          <li><a href="serviceS.html#ourservice">our service</a></li>
-        </ul>
+        <li class="nav-item">
+        <a class="nav-link" href="serviceS.html">service</a>
+      </li>
+      <button class="imgdrop"><img src="images/dropdown.png" alt=""></button>
       </div>
+      <ul class="listservice">
+        <li><a href="serviceS.html#ourservice ">introduction</a></li>
+        <li><a href="serviceS.html#ourservice">our service</a></li>
+      </ul>
+    </div>
  
       
        
@@ -46,9 +46,7 @@
     <a href="#" class="burgerbtn">
       <img class="burger" src="images/burger-img.svg" alt="image burger-img">
     </a>
-    <button class="button-serch">
-      <img src="images/logoserch.svg" alt="logo">
-    </button>
+   
   </div>
  
   
@@ -68,10 +66,20 @@
       <li class="nav-item">
         <a class="nav-link" href="serviceS.html">service</a>
       </li>
+
+      <li>
+        <input type="text" placeholder="rechercher" class="buttonclick">  
+      </li>
+      <li> 
+        
+      <button class="button-serch">
+        <img src="images/logoserch.svg" alt="logo">
+      </button>
+    </li>
+    
       
     </ul>
-    <input type="text" placeholder="rechercher" class="buttonclick">
-  
+   
   
  
 </header>
@@ -124,6 +132,7 @@
                     The point of using Lorem Ipsum 
                     is that it has a more-or-less normal
                   </p>
+                  <button id="maintenance" onclick="openmodal('maintenancemodal')">Read more</button>
   
                 </div>
               </div>
@@ -137,11 +146,11 @@
                     The point of using Lorem Ipsum 
                     is that it has a more-or-less normal
                   </p>
-  
+                  <button id="maintenance" onclick="openmodal('electricalmodal')">Read more</button>
                 </div>
   
               </div>
-              <div  class="main__service__container2__service">
+              <div  class="main__service__container2__service" >
                 <h3>ploumbing</h3>
                 <div class="main__service__container2__service--content">
                   <img src="images/plumbing.png" alt="logo plumbing">
@@ -150,6 +159,7 @@
                     The point of using Lorem Ipsum 
                     is that it has a more-or-less normal  
                   </p>
+                  <button id="maintenance" onclick="openmodal('ploumbingmodal')">Read more</button>
   
                 </div>
               </div>
@@ -157,6 +167,24 @@
             </div>
   
           </section>
+          <div id="maintenancemodal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('maintenancemodal')">&times;</span>
+                <p>Modal content for Equipment Maintenance</p>
+            </div>
+        </div>
+          <div id="electricalmodal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('electricalmodal')">&times;</span>
+                <p>Modal content for Equipment Maintenance</p>
+            </div>
+        </div>
+          <div id="ploumbingmodal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('ploumbingmodal')">&times;</span>
+                <p>Modal content for Equipment Maintenance</p>
+            </div>
+        </div>
 
           <footer>
             <div class="footer__logo__lists">

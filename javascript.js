@@ -130,3 +130,42 @@ function validateForm() {
 
 
 
+// var slideIndex = 0;
+//   carousel();
+
+//   function carousel() {
+//       var i;
+//       var x = document.getElementsByClassName("main__service__container2__service");
+//       for (i = 0; i < x.length; i++) {
+//          x[i].style.display = "none";  
+//       }
+//       slideIndex++;
+//       if (slideIndex > x.length) {slideIndex = 1}    
+//       x[slideIndex-1].style.display = "block";  
+//       setTimeout(carousel, 2000); 
+//   }
+
+//   function openModal(modalId) {  
+//     document.getElementById(modalId).style.display = "block";
+// }
+
+// function closeModal(modalId) {
+//     document.getElementById(modalId).style.display = "none";
+// // }
+//  function myFunction() {
+//      document.getElement("myDropdown").classList.toggle("show");
+//    }
+function openModal(modalId) {
+    document.getElementById(modalId).style.display = "block";
+}
+
+function closeModal(modalId) {
+    document.getElementById(modalId).style.display = "none";
+}
+
+
+
+
+
+
+
