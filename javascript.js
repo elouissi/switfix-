@@ -118,7 +118,7 @@ imgrdrop.addEventListener("click", () => {
         if (!emailRegex.test(email.value)) {
             document.getElementById('emailError').innerText = 'Enter a valid email';
             email.classList.add("input-error");
-            email.classList.add("input-valid");
+            email.classList.remove("input-valid");
             
         } else {
             document.getElementById('emailError').innerText = '';
@@ -130,7 +130,7 @@ imgrdrop.addEventListener("click", () => {
         if (!messageRgex.test(message.value)) {
             document.getElementById('messageError').innerText = 'Message cannot be blank';
             message.classList.add("input-error");
-            message.classList.add("input-valid");
+            message.classList.remove("input-valid");
         } else {
             document.getElementById('messageError').innerText = '';
             message.classList.add("input-valid")
