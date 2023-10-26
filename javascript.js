@@ -80,52 +80,56 @@ imgrdrop.addEventListener("click", () => {
 
 
 
-function validateForm() {
-    const name = document.getElementById('name');
-    const phone = document.getElementById('phone_number');
-    const email = document.getElementById('email');
-    const message = document.getElementById('message');
+    function validateForm() {
+        const name = document.getElementById('name');
+        const phone = document.getElementById('phone_number');
+        const email = document.getElementById('email');
+        const message = document.getElementById('message');
 
-    if (name.value === '') {
-        document.getElementById('nameError').innerText = 'Name cannot be blank';
-        name.classList.add("input-error")
-    } else {
-        document.getElementById('nameError').innerText = '';
-        name.classList.add("input-valid")
+        if (name.value === '') {
+            document.getElementById('nameError').innerText = 'Name cannot be blank';
+            name.classList.add("input-error")
+            name.classList.remove("input-valid")
+        } else {
+            document.getElementById('nameError').innerText = '';
+            name.classList.add("input-valid")
 
+        }
+
+        const phoneRegex = /\+212\-+[6|7]+\d{8}/g;
+        if (!phoneRegex.test(phone.value)) {
+            document.getElementById('phoneError').innerText = 'Enter a valid phone number';
+            phone.classList.add("input-error");
+            phone.classList.remove("input-valid")
+        } else {
+            document.getElementById('phoneError').innerText = '';
+            phone.classList.add("input-valid");
+        }
+
+
+
+        const emailRegex = /^[a-zA-Z0-9._-]+@gmail+\.[a-zA-Z]{2,4}$/;
+        if (!emailRegex.test(email.value)) {
+            document.getElementById('emailError').innerText = 'Enter a valid email';
+            email.classList.add("input-error");
+            email.classList.add("input-valid");
+            
+        } else {
+            document.getElementById('emailError').innerText = '';
+            email.classList.add("input-valid")
+        }
+
+
+        const messageRgex = /\w$/;
+        if (!messageRgex.test(message.value)) {
+            document.getElementById('messageError').innerText = 'Message cannot be blank';
+            message.classList.add("input-error");
+            message.classList.add("input-valid");
+        } else {
+            document.getElementById('messageError').innerText = '';
+            message.classList.add("input-valid")
+        }
     }
-
-    const phoneRegex = /\+212\-+[6|7]+\d{8}/g;
-    if (!phoneRegex.test(phone.value)) {
-        document.getElementById('phoneError').innerText = 'Enter a valid phone number';
-        phone.classList.add("input-error");
-    } else {
-        document.getElementById('phoneError').innerText = '';
-        phone.classList.add("input-valid");
-    }
-
-
-
-    const emailRegex = /^[a-zA-Z0-9._-]+@gmail+\.[a-zA-Z]{2,4}$/;
-    if (!emailRegex.test(email.value)) {
-        document.getElementById('emailError').innerText = 'Enter a valid email';
-        email.classList.add("input-error")
-        
-    } else {
-        document.getElementById('emailError').innerText = '';
-        email.classList.add("input-valid")
-    }
-
-
-    const messageRgex = /\w$/;
-    if (!messageRgex.test(message.value)) {
-        document.getElementById('messageError').innerText = 'Message cannot be blank';
-        message.classList.add("input-error")
-    } else {
-        document.getElementById('messageError').innerText = '';
-        message.classList.add("input-valid")
-    }
-}
 
 
 
